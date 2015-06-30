@@ -1,2 +1,2 @@
 # jacksonetty
-Playground for integrating Jackson and Netty
+Playground for integrating [Jackson](http://github.com/FasterXML/jackson) and [Netty](http://netty.io/)
