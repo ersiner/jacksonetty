@@ -18,7 +18,7 @@ public class JacksonettyTest {
         BasicJacksonCodec<Operation> jacksonCodec = new BasicJacksonCodec<>(Operation.class, objectMapper);
         EmbeddedChannel embeddedChannel = new EmbeddedChannel(
                 new LineBasedFrameDecoder(1024),
-                new NewLineAppender(),
+                new NewlineAppender(),
                 jacksonCodec);
 
         // {"opr":"+","opd1":1.5,"opd2":2.5}
