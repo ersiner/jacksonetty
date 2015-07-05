@@ -13,7 +13,6 @@ public class JacksonettyTest {
 
     @Test
     public void testJacksonetty() {
-
         ObjectMapper objectMapper = new ObjectMapper();
         BasicJacksonCodec<Operation> jacksonCodec = new BasicJacksonCodec<>(Operation.class, objectMapper);
         EmbeddedChannel embeddedChannel = new EmbeddedChannel(

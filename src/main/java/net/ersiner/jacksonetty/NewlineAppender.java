@@ -7,7 +7,7 @@ import io.netty.channel.ChannelPromise;
 
 public class NewlineAppender extends ChannelOutboundHandlerAdapter {
 
-    private static byte[] newlineBytes = new byte[] { '\r', '\n' };
+    private static final byte[] newlineBytes = new byte[] { '\r', '\n' };
 
     @Override
     public void write(ChannelHandlerContext ctx, Object msg, ChannelPromise promise) throws Exception {

@@ -10,6 +10,7 @@ import io.netty.handler.codec.ByteToMessageCodec;
 import java.util.List;
 
 public class BasicJacksonCodec<T> extends ByteToMessageCodec<T> {
+
     private final Class<T> clazz;
     private final ObjectMapper objectMapper;
 
